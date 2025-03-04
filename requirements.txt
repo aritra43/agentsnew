@@ -1,6 +1,7 @@
+pip>=25.0.1
+
 crewai
 crewai_tools
 crewai_utils
 sqlite3>=3.35.0
 chromadb
-pip>=25.0.1
