@@ -1,0 +1,82 @@
+## Healthcare Appointment Scheduling System - Software Requirements Specification
+
+This document outlines the software requirements for the Healthcare Appointment Scheduling System, categorized into Functional, Non-Functional, and Technical Requirements.
+
+**1. Functional Requirements (FR):**
+
+These requirements define the system's core functionalities.
+
+* **User Authentication and Authorization:**
+    * FR1.1: Guest users can log in using a mobile number and OTP.
+    * FR1.2: Registered patients can log in with their mobile number and OTP.
+    * FR1.3: Healthcare staff can log in with their mobile number and OTP.
+    * FR1.4: Doctors can log in with their mobile number and OTP.
+    * FR1.5: System administrators can manage user accounts.
+    * FR1.6: Role-based access control restricts user access to specific functionalities.
+* **Patient Management:**
+    * FR2.1: Patients can create and manage their medical profiles (including allergies, chronic conditions, medications, family history).
+    * FR2.2: Patients can book, reschedule (up to 24 hours prior), and view appointments.
+    * FR2.3: Patients can receive appointment reminders via email and SMS.
+    * FR2.4: Patients can access and view their prescriptions.
+    * FR2.5: Patients can utilize an AI-driven symptom checker.
+* **Appointment Management:**
+    * FR3.1: Healthcare staff can create, edit, and delete appointments.
+    * FR3.2: Doctors can view, update (status), and manage their appointments.
+    * FR3.3: The system maintains appointment history.
+    * FR3.4: The system supports online consultations (if applicable).
+* **Healthcare Provider Management:**
+    * FR4.1: Healthcare staff can manage services offered (add, edit, delete).
+    * FR4.2: Healthcare staff can manage doctor profiles and assign doctors to services.
+    * FR4.3: The system supports appointment search functionality with filters (date, patient name, doctor, status).
+* **Medical Record Management:**
+    * FR5.1: Doctors and healthcare staff can create and manage medical records, including diagnosis, medications, and test results.
+    * FR5.2: Medical records are securely stored and accessible only to authorized personnel.
+    * FR5.3: The system integrates with existing EHR systems.
+* **Reporting and Analytics:**
+    * FR6.1: Healthcare staff can generate various reports (financial, operational, patient demographics).
+
+**2. Non-Functional Requirements (NFR):**
+
+These requirements define the system's quality attributes.
+
+* **Performance:**
+    * NFR1.1: API response time should be less than 100ms for 95% of requests.
+    * NFR1.2: Database query response time should be less than 200ms for transactional queries.
+    * NFR1.3: Initial page load time should be less than 2 seconds for 95% of users.
+* **Scalability:**
+    * NFR2.1: The system should scale to accommodate a significant increase in users and data without performance degradation.
+* **Security:**
+    * NFR3.1: Role-based access control (RBAC) should be implemented to restrict access to sensitive data.
+    * NFR3.2: Multi-factor authentication (MFA) should be enforced.
+    * NFR3.3: Data encryption (at rest and in transit) is mandatory.
+    * NFR3.4: Audit trails should record all actions related to patient data.
+    * NFR3.5: Compliance with HIPAA and GDPR regulations is required.
+* **Availability:**
+    * NFR4.1: The system should have 99% uptime during business hours.
+* **Maintainability:**
+    * NFR5.1: MTTRS (Mean Time To Restore Service) should be less than 1 hour.
+* **Usability:**
+    * NFR6.1: The system should be user-friendly and intuitive for all user roles.
+    * NFR6.2: The system should adhere to WCAG accessibility guidelines.
+* **Interoperability:**
+    * NFR7.1: Support for HL7, FHIR, or CDA standards for data exchange with EHR systems.
+
+**3. Technical Requirements (TR):**
+
+These requirements specify the system's technical infrastructure and architecture.
+
+* **Database:**
+    * TR1.1: Relational database (PostgreSQL or MySQL) is required.
+    * TR1.2: Database schema should be normalized (at least 3NF).
+* **Architecture:**
+    * TR2.1: Multi-tenant SaaS architecture is preferred.
+* **Technology Stack:**
+    * TR3.1: Specify the programming languages, frameworks, and libraries to be used.
+* **API Integrations:**
+    * TR4.1: Secure integration with payment gateways and EHR systems is required.
+* **Security Protocols:**
+    * TR5.1: Implement secure communication protocols (HTTPS, TLS).
+* **Deployment:**
+    * TR6.1: Specify the deployment environment (cloud, on-premise).
+* **Monitoring and Logging:**
+    * TR7.1: Implement comprehensive system monitoring and logging capabilities.

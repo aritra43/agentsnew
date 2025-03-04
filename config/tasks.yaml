@@ -1,0 +1,248 @@
+business_analysis_task:
+  description: >
+    Objective:
+    Extract and enhance sections from the Business Requirements Document (BRD):
+    - Introduction
+    - Purpose
+    - Scope
+    - In Scope
+    - Out of Scope
+    - Assumptions
+    - References
+    - Overview
+    Enhance extracted sections with:
+    - In-depth explanations
+    - Real-world examples
+    - Industry best practices
+    - Structured details for client clarity
+    -Please elaborate the points properly where eacg point shoud be atleast two paragraphs
+
+      Guidelines:
+      Introduction:
+        - Provide project background, business context, and purpose.
+        - Explain the need for the initiative and expected impact.
+        -Please elaborate the points properly where eacg point shoud be atleast two paragraphs
+      Purpose:
+        - Define document objectives and stakeholder guidance.
+        - Distinguish between business and technical goals.
+        -Please elaborate the points properly where eacg point shoud be atleast two paragraphs
+      Scope:
+        - Explicitly outline project boundaries.
+        - Include functional, non-functional, regulatory, and operational constraints.
+        -Please elaborate the points properly where eacg point shoud be atleast two paragraphs
+      In Scope:
+        - Detail included features, functionalities, and deliverables.
+        - Provide examples and real-world implications.
+        -Please elaborate the points properly where eacg point shoud be atleast two paragraphs
+      Out of Scope:
+        - Extract as-is without modifications.
+        - Provide context on exclusions and associated risks.
+      Assumptions:
+        - Extract as-is without modifications.
+        - Expand on implications and potential risks if assumptions change.
+        -Please elaborate the points properly where eacg point shoud be atleast two paragraphs
+      References:
+        - List cited materials, frameworks, and standards.
+        - Enhance with best practices and industry standards.
+        -Please elaborate the points properly where eacg point shoud be atleast two paragraphs
+      Overview:
+        - Summarize key takeaways in a structured format.
+        -Please elaborate the points properly where eacg point shoud be atleast two paragraphs
+
+    Enhancements:
+      - Ensure structured, professional, and detailed writing.
+      - Use tables, bullet points, and subheadings for clarity.
+      - Include industry-specific examples and real-world cases.
+      - Validate and enrich sections using external sources.
+      -Please elaborate the points properly where eacg point shoud be atleast two paragraphs
+
+    Output:
+      - Formal, structured, and client-ready document.
+      - Include, tables, and figures where necessary.
+      - Maintain clarity, completeness, and professionalism.
+      -Please elaborate the points properly where eacg point shoud be atleast two paragraphs
+
+    Every subpoints should be explained in an elaborated manner.
+  expected_output: >
+    Clear and detailed sections for Introduction, Purpose, Scope, In Scope, Out of Scope, Assumptions, References, and Overview with enhanced explanations where needed every subpoints should be explained in an elaborated manner.
+  agent: business_analyst
+
+technical_analysis_task:
+  description: >
+    Objective:
+    Extract and enhance sections from the Business Requirements Document (BRD):
+    - Data Model
+    - User Characteristics
+    - Codification Schemes
+    - Dependencies
+    Enhance extracted sections with:
+    - In-depth explanations
+    - Real-world examples
+    - Industry best practices
+    - Structured details for client clarity
+    -Please elaborate the points properly where each point shoud be atleast two paragraphs
+
+    Guidelines:
+      Data Model:
+        - Extract existing model details and expand into a structured ER model.
+        - Include entities, attributes, primary keys, foreign keys, and relationships.
+        - Provide example schemas, sample data representations, and normalization best practices.
+        - Use industry standards and tables  where necessary.
+        -No images or tables required
+        -Please elaborate the points properly where each point shoud be atleast two paragraphs
+      User Characteristics:
+        - Identify and categorize user roles, personas, and access levels.
+        - Include demographics, skill levels, and behavioral patterns.
+        - Provide user journeys, workflows, and interaction models.
+        - Incorporate UX/UI principles and accessibility considerations.
+        -No images or tables required
+        -Please elaborate the points properly where each point shoud be atleast two paragraphs
+      Codification Schemes:
+        - Extract existing schemes and document naming conventions.
+        - Detail numbering systems, data classification rules, and coding structures.
+        - Include examples of versioning strategies and hierarchical naming methods.
+        - Align with industry standards (ISO, IEEE, enterprise policies).
+        -Please elaborate the points properly where each point shoud be atleast two paragraphs
+      Dependencies:
+        - Identify internal and external dependencies affecting the system.
+        - List third-party services, APIs, databases, regulatory constraints, and interdependencies.
+        - Expand on bottlenecks, failure points, and contingency planning.
+        - Provide risk assessments, mitigation strategies, and alternate solutions.
+        -Please elaborate the points properly where each point shoud be atleast two paragraphs
+
+    Enhancements:
+      - Validate vague sections using LLM and external industry sources.
+      - Provide case studies, benchmarks, and best practices for enrichment.
+      - Use tables, structured lists, flowcharts, and  for clarity.
+      - Maintain a structured, professional, and client-ready format.
+      -Please elaborate the points properly where each point shoud be atleast two paragraphs
+
+    Output:
+      - Highly detailed, structured, and professional document.
+      - Include technical explanations, tables elements, and best practices.
+      - Ensure exhaustive details for clarity and completeness.
+      -Please elaborate the points properly where each point shoud be atleast two paragraphs
+      Every subpoints should be explained in an elaborated manner.
+
+  expected_output: >
+    Clear and detailed technical sections for Data Model, User Characteristics, Codification Schemes, Assumptions, Dependencies, and Out of Scope Every subpoints should be explained in an elaborated manner.
+  agent: technical_analyst
+
+requirement_categorize_task:
+  description: >
+    Objective:
+      Extract and categorize business requirements from the Business Requirements Document (BRD) into:
+        - Functional Requirements (FR)
+        - Non-Functional Requirements (NFR)
+        - Technical Requirements (TR)
+      Enhance extracted requirements by:
+        - Refining vague or unclear sections using LLM and external knowledge sources.
+        - Providing detailed, structured, and client-ready documentation.
+
+    Categorization Guidelines:
+      Functional Requirements (FR):
+        - Define core system features, operations, and expected behaviors.
+        - Outline system responses to user actions.
+        - Provide detailed use cases, workflows, and real-world examples.
+        - Ensure all functionalities are measurable and verifiable.
+      Non-Functional Requirements (NFR):
+        - Define quality attributes, performance, security, scalability, and compliance needs.
+        - Ensure all NFRs are quantifiable and testable (e.g., "system must handle 1,000 transactions per second with 99.99% uptime").
+        - Align with industry benchmarks and best practices.
+      Technical Requirements (TR):
+        - Extract infrastructure, technology stack, APIs, frameworks, and database structures.
+        - Detail hardware/software constraints, networking requirements, and security protocols.
+        - List third-party dependencies and integration requirements.
+        - Enhance with best practices and current industry standards.
+
+    Enhancements:
+      - Identify and refine vague or ambiguous requirements.
+      - Align with industry compliance and security standards.
+      - Use tables, , and structured lists for better clarity.
+      - Ensure a structured, professional, and client-focused format.
+
+    Output:
+      - Well-structured, detailed, and categorized document.
+      - Clear separation of Functional, Non-Functional, and Technical requirements.
+      - Use of tables, bullet points, and tables elements for improved comprehension.
+      - Comprehensive details ensuring no ambiguity in requirements.
+
+  expected_output: >
+    A structured list of Functional, Non-Functional, and Technical requirements with well-explained descriptions.
+  agent: requirement_categorizer
+
+srs_write_task:
+  description: >
+    Objective:
+    Generate a highly detailed, structured, and professional Software Requirements Specification (SRS) document by consolidating and expanding researched content.
+    Ensure clarity, completeness, and technical accuracy while preserving extracted content where required.
+    Guidelines:
+    Preserve Extracted Content:
+      - "Out of Scope" and "Assumptions" sections must be included exactly as extracted from the BRD without modification.
+      - Expand all other sections with additional details but without altering the original intent.
+    Sections to Include:
+      - Introduction:
+          - Provide a project background, business context, and overall purpose.
+          - Include industry-specific context and real-world significance.
+      - Purpose:
+          - Define the role of this document in guiding stakeholders.
+          - Clearly differentiate between business and technical objectives.
+      - Scope:
+          - Outline explicit project boundaries, covering functional, non-functional, regulatory, and operational aspects.
+      - In Scope:
+          - Break down included functionalities, features, and deliverables.
+          - Provide detailed descriptions, examples, and their business impact.
+      - Out of Scope:
+          - Insert as-is from the BRD without modification.
+          - Provide additional context on exclusions and associated risks.
+      - Assumptions:
+          - Insert as-is from the BRD without modification.
+          - Elaborate on implications and possible risks if assumptions change.
+      - References:
+          - List cited materials, standards, frameworks, and relevant documentation.
+          - Add supporting industry best practices where applicable.
+      - Overview:
+          - Summarize key takeaways in a structured, digestible format.
+    Requirement Categorization:
+      - Functional Requirements (FR):
+          - Define core system features, workflows, and expected behaviors.
+          - Provide detailed use cases, user interactions, and real-world applications.
+      - Non-Functional Requirements (NFR):
+          - Outline performance expectations, security requirements, compliance standards, scalability, and operational constraints.
+          - Ensure quantifiable and testable criteria.
+      - Technical Requirements (TR):
+          - Detail system architecture, technology stack, APIs, databases, integrations, hardware/software constraints, and security protocols.
+    Technical Analysis & Data Representation:
+      - Data Model:
+          - Expand with entity-relationship , database schemas, attribute definitions, and data flow explanations.
+          - Include normalization and optimization principles.
+      - User Characteristics:
+          - Define user personas, roles, access levels, demographics, behavior patterns, and usability needs.
+          - Incorporate UX/UI principles for better accessibility.
+      - Codification Schemes:
+          - Provide structured naming conventions, numbering systems, data classification rules, and version control strategies.
+          - Align with industry standards.
+    Enhancements Using External Research & Best Practices:
+      - Refine vague sections using LLM capabilities and external industry research to ensure clarity and completeness.
+      - Incorporate real-world case studies, frameworks, standards, and benchmarks.
+      - Utilize tables, , flowcharts, and structured lists to enhance readability.
+      - Maintain a formal, professional, and highly structured format suitable for clients and stakeholders.
+    Output Requirements:
+      - The final SRS document must be highly detailed, structured, and exhaustive.
+      - Information should be well-organized and fully explained without ambiguity.
+      - No modification should be made to sections explicitly required to remain unchanged.
+      - The document must be formatted professionally, using clear headings, tables, , and bullet points for readability.
+      Every subpoints should be explained in an elaborated manner
+
+  expected_output: >
+    A fully written, structured, and polished SRS document incorporating all extracted and categorized information, ensuring that Out of Scope and Assumptions match the BRD  and along with it every part must be defined in an elaborated manner Every subpoints should be explained in an elaborated manner.
+  agent: srs_writer
+
+srs_format_task:
+  description: >
+    Format the final SRS document with appropriate headings, line breaks, and structured sections.  
+    Ensure that the "Out of Scope" section is correctly placed after "In Scope".  
+    Ensure that "Assumptions" is correctly formatted with bullet points and listed before "Dependencies".
+  expected_output: >
+    The final SRS document is properly formatted with bolded, capitalized headings, clear section divisions, and includes "Out of Scope," "Assumptions," "Dependencies," and "Conclusion" sections saved as 'srs1.md'.
+  agent: srs_formatter
