@@ -1,5 +1,5 @@
 crewai
 crewai_tools
-
+sqlite==3.35.0
 
 
