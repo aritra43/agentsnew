@@ -22,7 +22,6 @@ charset-normalizer==3.2.0
 chroma-hnswlib==0.7.6
 chromadb==0.3.29
 click==8.1.7
-cohere==4.29.0
 colorama==0.4.6
 coloredlogs==15.0.1
 crewai==0.102.0
