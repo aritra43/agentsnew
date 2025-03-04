@@ -5,6 +5,8 @@ alembic>1.11.3
 altair>5.0.1
 annotated-types>0.6.0
 anyio>3.7.1
+colorama<=0.4.6
+
 asgiref>3.6.0
 asttokens>2.2.1
 attrs>23.1.0
@@ -18,7 +20,7 @@ cffi>1.15.1
 charset-normalizer>3.2.0
 chromadb>0.5.23
 click>8.1.7
-coloredlogs>15.0.1
+coloredlogs<=15.0.1
 crewai>0.102.0
 crewai-tools>0.36.0
 cryptography>42.0.4
