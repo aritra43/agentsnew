@@ -1,4 +1,5 @@
 crewai
+pip>=24.0
 crewai_tools
 pysqlite3-binary
 sqlite3>=3.35.0
