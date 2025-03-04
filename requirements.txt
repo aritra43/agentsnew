@@ -122,7 +122,6 @@ pyasn1_modules==0.3.0
 pycparser==2.21
 pydantic==1.10.9
 pydantic-settings==2.0.3
-pydantic_core==2.5.2
 pydeck==0.8.0
 Pygments==2.16.1
 PyJWT==2.7.0
