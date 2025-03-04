@@ -36,7 +36,7 @@ docstring_parser==0.15
 durationpy==0.5
 embedchain==0.1.113
 executing==2.0.0
-fastapi==0.103.1
+fastapi==0.85.1
 fastavro==1.8.2
 filelock==3.12.2
 flatbuffers==23.5.26
