@@ -1,3 +1,2 @@
 crewai
 crewai_tools
-sqlite3
