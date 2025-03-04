@@ -1,5 +1,4 @@
-pip>=25.0.1
-
+pip
 crewai
 crewai_tools
 crewai_utils
