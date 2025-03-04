@@ -8,7 +8,9 @@ st.set_page_config(page_title="BRD to SRS converter", page_icon="📝", layout="
 #Title and description
 st.title("BRD to SRS converter, powered by CrewAI.")
 st.markdown("Generate an SRS from a BRD using AI agents.")
-
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 
 #Sidebar
