@@ -1,7 +1,7 @@
 import streamlit as st
 from crew import BrdToSrs
 
-
+import sqlite3
 #StreamLit page config
 st.set_page_config(page_title="BRD to SRS converter", page_icon="📝", layout="wide")
 
