@@ -1,4 +1,4 @@
 crewai
 crewai_tools
-chroma
+pysqlite3-binary
 sqlite3>=3.35.0
