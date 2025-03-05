@@ -1,3 +1,14 @@
-crewai
-crewai_tools
-pysqlite3-binary
+pandas
+plotly
+bokeh==2.4.3
+graphviz
+requests
+matplotlib
+numpy<2
+scipy
+altair>=5.0.0
+pydeck
+Faker
+openai
+vega_datasets
+streamlit>=1.43.0
