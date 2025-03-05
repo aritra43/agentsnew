@@ -12,5 +12,5 @@ Faker
 openai
 vega_datasets
 streamlit>=1.43.0
-crewa
-crewa_tools
+crewai
+crewai_tools
